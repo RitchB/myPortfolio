@@ -1,6 +1,16 @@
 import Link from "next/link";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 
 const PageNotFound = () => {
+    const router = useRouter();
+
+    useEffect(() => {
+        setTimeout(() => {
+            router.push('/');
+        }, 5000)
+    }, [])
+
   return (
     <div>
       <p>Oups! Page not found</p>
@@ -14,4 +24,4 @@ const PageNotFound = () => {
   );
 };
 
-export default PageNotFound
+export default PageNotFound;

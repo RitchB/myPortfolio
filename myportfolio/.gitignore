@@ -34,3 +34,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# JPEG
+*.jpg
+*.jpeg
+
+# Portable Network Graphics
+*.png
