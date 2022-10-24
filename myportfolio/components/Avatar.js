@@ -7,6 +7,7 @@ const MyAvatar = () => {
       <Image
       className="rounded-full"
         src="/avatar.jpg"
+        alt=""
         width={84}
         height={84}
       />

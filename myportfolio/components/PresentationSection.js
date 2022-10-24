@@ -14,13 +14,13 @@ const Section1 = () => {
               Hi ! I'm Richard
             </p>
             <p> Lorem, ipsum blablabla</p>
-            <a target="_blank" href="https://github.com/RitchB">
+            <a target="_blank" rel="noreferrer" href="https://github.com/RitchB">
               <BsGithub />
             </a>{" "}
-            <a target="_blank" href="https://twitter.com/IAmRitchB">
+            <a target="_blank" rel="noreferrer" href="https://twitter.com/IAmRitchB">
               <BsTwitter />
             </a>{" "}
-            <a target="_blank" href="https://www.linkedin.com/in/richard-beauregard/">
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/richard-beauregard/">
               <BsLinkedin />
             </a>{" "}
           </div>

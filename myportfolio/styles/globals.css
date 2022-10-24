@@ -8,3 +8,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    body {
+        @apply max-w-2xl mx-auto px-4;
+        @apply dark:bg-stone-900 dark:text-stone-200 bg-stone-100 text-stone-800
+    }
+}
