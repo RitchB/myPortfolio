@@ -6,7 +6,7 @@ const ArticlesSection = () => {
       <Link href="/articles">
         <a>
           {" "}
-          <p className="font-medium font-yanoneK">Read articles here</p>{" "}
+          <p>Read articles here</p>{" "}
         </a>
       </Link>
     </div>

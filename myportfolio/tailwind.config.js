@@ -25,6 +25,11 @@ module.exports = {
     extend: {
       colors: {
         primary: "#ff4800",
+        twitter: '#00ACEE',
+        linkdin: '#0E76A8',
+        github: '#171515',
+        cardsboxred: '#C22C39',
+        cardsboxblue: '#1f396E',
       },
       fontFamily: {
         balsamiq: "'Balsamiq Sans', cursive",
@@ -33,6 +38,10 @@ module.exports = {
         mohave: "'Mohave', sans-serif",
         pressStart: "'Press Start 2P', cursive",
         yanoneK: "'Yanone Kaffeesatz', sans-serif",
+        BebasNeue: "'Bebas Neue', cursive",
+        PTSans: "'PT Sans', sans-serif",
+        CaveatBrush: "'Caveat Brush', cursive",
+        NanumoenScript: "'Nanum Pen Script', cursive",
       },
     },
   },
