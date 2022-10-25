@@ -13,10 +13,10 @@ const Navbar = () => {
   }, []);
 
   const navigation = [
-    { label: "Home", path: "/" },
-    { label: "Projects", path: "/projects" },
-    { label: "Articles", path: "/articles" },
-    { label: "About", path: "/about" },
+    { id:1, label: "Home", path: "/" },
+    { id:2, label: "Projects", path: "/projects" },
+    { id:3, label: "Articles", path: "/articles" },
+    { id:4, label: "About", path: "/about" },
   ];
 
   const renderDarkModeToggle = () => {
@@ -28,7 +28,7 @@ const Navbar = () => {
     if (currentTheme === "dark") {
       return (
         <Button
-          className="bg-gray-200 dark:bg-gray-600"
+          className="bg-gray-200 dark:bg-gray-700 justify-end"
           onClick={() => setTheme('light')}
         >
           <HiOutlineSun />
@@ -36,7 +36,7 @@ const Navbar = () => {
       );
     } else {
       return (
-        <Button className="bg-gray-200" onClick={() => setTheme('dark')}>
+        <Button className="bg-gray-200 justify-end" onClick={() => setTheme('dark')}>
           <HiOutlineMoon />
         </Button>
       );
@@ -44,11 +44,11 @@ const Navbar = () => {
   };
 
   return (
-    <div className="h-16 flex items-center justify-between">
+    <div className="mt-6 flex items-center justify-evenly">
       <ul className="flex gap-4">
         {navigation.map((nav) => (
-          <Link href={nav.path}>
-            <a className="font-medium text-xl text-gray-600 hover:text-gray-800 antialised font-yanoneK">
+          <Link key={nav.id} href={nav.path}>
+            <a className="text-2xl text-stone-700 hover:text-stone-900 dark:text-stone-200 dark:hover:text-stone-400 antialised font-BebasNeue">
               {nav.label}
             </a>
           </Link>
@@ -60,17 +60,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-// rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10"
-//         <nav className="flex justify-center text-3xl antialiased font-medium font-yanoneK">
-
-//<button
-//type="button"
-//className="inline-flex items-center rounded border border-transparent bg-gray-300 px-2.5 py-1.5 text-xs font-medium text-black shadow-sm hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-//>
-//<HiOutlineMoon />
-//</button>
-
-//{
-//  currentTheme === "dark" ? <button>dark</button> : <button>white</button>;
-//}
