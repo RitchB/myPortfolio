@@ -1,11 +1,12 @@
+import React from "react";
 import Head from "next/head";
 import { FaExclamationTriangle } from "react-icons/fa";
 
-const about = () => {
+function blog() {
   return (
     <>
       <Head>
-        <title>Richard Beauregard | Home</title>
+        <title>Richard Beauregard | Projetcs</title>
         <meta name="keywords" content="Richard Beauregard" />
       </Head>
       <div className="pt-8 flex items-center text-2xl text-stone-600 dark:text-stone-200 antialised font-OverTheRainbow">
@@ -14,6 +15,6 @@ const about = () => {
       </div>
     </>
   );
-};
+}
 
-export default about;
+export default blog;
