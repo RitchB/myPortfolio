@@ -1,21 +1,26 @@
 import MyAvatar from "./Avatar";
-import { BsGithub, BsTwitter, BsLinkedin } from "react-icons/bs";
+import { BsGithub, BsTwitter, BsLinkedin, BsYoutube } from "react-icons/bs";
 
-const PresentationSection = () => {
+const Hero = () => {
   return (
     <>
       <div className="mt-24">
-        <div className="max-w-2xl">
+        <div className="relative w-full max-w-3-xl">
+          {/* 
+        <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply blur-xl filter opacity-70 animate-blob"></div>
+        <div className="absolute top-0 left-24 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply blur-xl filter opacity-70 animate-blob animation-delay-2000"></div>
+        <div className="absolute -bottom-16 left-8 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply blur-xl filter opacity-70 animate-blob animation-delay-4000"></div>
+        */}
           <div>
             <MyAvatar />
           </div>
-          <h1 className="mt-4 text-xl text-4xl font-medium font-CaveatBrush">
+          <h1 className="text-xl text-4xl font-medium text-stone-600 dark:text-stone-200 antialised font-OverTheRainbow">
             Hi ! I&apos;m{" "}
-            <span className="font-CaveatBrush text-6xl font-bold dark:text-cardsboxblue text-cardsboxred tracking-wide">
+            <span className="text-6xl font-bold text-cardsboxblue dark:text-cardsboxred antialised font-OverTheRainbow">
               Richard
             </span>
           </h1>
-          <p className="mt-4 font-PTSans text-justify">
+          <p className="mt-4 text-justify text-base text-stone-600 dark:text-stone-200 antialised font-PTSans ">
             {" "}
             I'm working as an actuary 🧑‍💻 since 2008. I'm specialized in
             product development 🏗️ and I'm based in Montreal 🇨🇦. I'm a curious
@@ -49,6 +54,14 @@ const PresentationSection = () => {
             >
               <BsLinkedin />
             </a>{" "}
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.youtube.com/channel/UCocV2OHxALlTVDA3wi7uutw/"
+              className="text-youtube text-3xl"
+            >
+              <BsYoutube />
+            </a>{" "}
           </div>
         </div>
       </div>
@@ -56,4 +69,4 @@ const PresentationSection = () => {
   );
 };
 
-export default PresentationSection;
+export default Hero;

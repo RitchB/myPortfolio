@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
-        <footer className="flex justify-center text-md antialiased font-medium font-BebasNeue">
-            Build by Richard Beauregard Copyright 2022
+        <footer className="mb-6 flex justify-center font-medium text-md text-stone-600 dark:text-stone-200 antialiased font-BebasNeue">
+            Build by Richard Beauregard © 2022
         </footer>
     );
 }
